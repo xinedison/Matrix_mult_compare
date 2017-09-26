@@ -33,10 +33,9 @@ class Timer(object):
         self.end = time.time()
         self.secs = self.end - self.start
         self.msecs = self.secs * 1000  # millisecs
-        global logger
-        logger.info('%s elapsed time: %f ms' % (self.fname, self.msecs))
-
-
+        #global logger
+        #logger.info('%s elapsed time: %f ms' % (self.fname, self.msecs))
+        print('%s elapsed time: %f ms' % (self.fname, self.msecs))
 
 import mxnet as mx
 from mxnet import ndarray as nd
